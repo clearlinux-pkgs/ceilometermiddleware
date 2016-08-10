@@ -1,6 +1,22 @@
 CHANGES
 =======
 
+0.5.0
+-----
+
+* Add background thread notifier sending ability
+* Upgrade hacking
+* Updated from global requirements
+* Only install hacking in pep8
+* Remove oslo.context dependency
+* Remove unused requirements
+* Add missing requirements for mock
+* Updated from global requirements
+* [Trivial] Remove executable privilege of doc/source/conf.py
+* Updated from global requirements
+* Updated from global requirements
+* use path as resource id when missing RESELLER prefix
+
 0.4.0
 -----
 
