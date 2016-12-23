@@ -4,7 +4,7 @@
 #
 Name     : ceilometermiddleware
 Version  : 0.5.0
-Release  : 12
+Release  : 13
 URL      : http://tarballs.openstack.org/ceilometermiddleware/ceilometermiddleware-0.5.0.tar.gz
 Source0  : http://tarballs.openstack.org/ceilometermiddleware/ceilometermiddleware-0.5.0.tar.gz
 Summary  : OpenStack Telemetry middleware for generating metrics
@@ -20,6 +20,7 @@ BuildRequires : WebOb-python
 BuildRequires : aioeventlet-python
 BuildRequires : amqp-python
 BuildRequires : anyjson-python
+BuildRequires : configparser-python
 BuildRequires : coverage-python
 BuildRequires : discover-python
 BuildRequires : docutils-python
@@ -31,6 +32,7 @@ BuildRequires : flake8-python
 BuildRequires : futures-python
 BuildRequires : greenlet-python
 BuildRequires : hacking
+BuildRequires : imagesize-python
 BuildRequires : iso8601-python
 BuildRequires : kombu-python
 BuildRequires : mccabe-python
@@ -53,7 +55,6 @@ BuildRequires : pip
 BuildRequires : pluggy
 BuildRequires : py-python
 BuildRequires : pycadf-python
-BuildRequires : pycodestyle-python
 BuildRequires : pyflakes-python
 BuildRequires : pytest
 BuildRequires : python-dev
