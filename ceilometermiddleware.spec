@@ -4,13 +4,19 @@
 #
 Name     : ceilometermiddleware
 Version  : 0.5.0
-Release  : 14
+Release  : 15
 URL      : http://tarballs.openstack.org/ceilometermiddleware/ceilometermiddleware-0.5.0.tar.gz
 Source0  : http://tarballs.openstack.org/ceilometermiddleware/ceilometermiddleware-0.5.0.tar.gz
 Summary  : OpenStack Telemetry middleware for generating metrics
 Group    : Development/Tools
 License  : Apache-2.0
 Requires: ceilometermiddleware-python
+Requires: oslo.config
+Requires: oslo.messaging
+Requires: oslo.utils
+Requires: pbr
+Requires: pycadf
+Requires: six
 BuildRequires : Babel-python
 BuildRequires : Jinja2
 BuildRequires : PyYAML-python
@@ -32,7 +38,6 @@ BuildRequires : flake8-python
 BuildRequires : futures-python
 BuildRequires : greenlet-python
 BuildRequires : hacking
-BuildRequires : imagesize-python
 BuildRequires : iso8601-python
 BuildRequires : kombu-python
 BuildRequires : mccabe-python
@@ -85,11 +90,6 @@ Middleware for OpenStack Telemetry (Ceilometer)
 %package python
 Summary: python components for the ceilometermiddleware package.
 Group: Default
-Requires: oslo.config
-Requires: oslo.messaging-python
-Requires: oslo.utils-python
-Requires: pycadf-python
-Requires: six-python
 
 %description python
 python components for the ceilometermiddleware package.
@@ -100,12 +100,12 @@ python components for the ceilometermiddleware package.
 
 %build
 export LANG=C
-export SOURCE_DATE_EPOCH=1484538164
+export SOURCE_DATE_EPOCH=1489026734
 python2 setup.py build -b py2
 python3 setup.py build -b py3
 
 %install
-export SOURCE_DATE_EPOCH=1484538164
+export SOURCE_DATE_EPOCH=1489026734
 rm -rf %{buildroot}
 python2 -tt setup.py build -b py2 install --root=%{buildroot} --force
 python3 -tt setup.py build -b py3 install --root=%{buildroot} --force
