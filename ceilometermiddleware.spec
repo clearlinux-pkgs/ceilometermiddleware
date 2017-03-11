@@ -4,7 +4,7 @@
 #
 Name     : ceilometermiddleware
 Version  : 0.5.0
-Release  : 15
+Release  : 16
 URL      : http://tarballs.openstack.org/ceilometermiddleware/ceilometermiddleware-0.5.0.tar.gz
 Source0  : http://tarballs.openstack.org/ceilometermiddleware/ceilometermiddleware-0.5.0.tar.gz
 Summary  : OpenStack Telemetry middleware for generating metrics
@@ -17,70 +17,11 @@ Requires: oslo.utils
 Requires: pbr
 Requires: pycadf
 Requires: six
-BuildRequires : Babel-python
-BuildRequires : Jinja2
-BuildRequires : PyYAML-python
-BuildRequires : Pygments
-BuildRequires : Sphinx-python
-BuildRequires : WebOb-python
-BuildRequires : aioeventlet-python
-BuildRequires : amqp-python
-BuildRequires : anyjson-python
-BuildRequires : configparser-python
-BuildRequires : coverage-python
-BuildRequires : discover-python
-BuildRequires : docutils-python
-BuildRequires : eventlet-python
-BuildRequires : extras
-BuildRequires : extras-python
-BuildRequires : fixtures-python
-BuildRequires : flake8-python
-BuildRequires : futures-python
-BuildRequires : greenlet-python
-BuildRequires : hacking
-BuildRequires : iso8601-python
-BuildRequires : kombu-python
-BuildRequires : mccabe-python
-BuildRequires : mox3-python
-BuildRequires : msgpack-python-python
-BuildRequires : netaddr
-BuildRequires : netifaces-python
-BuildRequires : oslo.config
-BuildRequires : oslo.context-python
-BuildRequires : oslo.i18n-python
-BuildRequires : oslo.messaging-python
-BuildRequires : oslo.middleware-python
-BuildRequires : oslo.serialization-python
-BuildRequires : oslo.utils-python
-BuildRequires : oslosphinx-python
-BuildRequires : oslotest-python
 BuildRequires : pbr
-BuildRequires : pep8
 BuildRequires : pip
-BuildRequires : pluggy
-BuildRequires : py-python
-BuildRequires : pycadf-python
-BuildRequires : pyflakes-python
-BuildRequires : pytest
 BuildRequires : python-dev
-BuildRequires : python-mimeparse-python
-BuildRequires : python-mock-python
 BuildRequires : python3-dev
-BuildRequires : pytz-python
-BuildRequires : requests-python
 BuildRequires : setuptools
-BuildRequires : six
-BuildRequires : six-python
-BuildRequires : stevedore
-BuildRequires : testrepository-python
-BuildRequires : testscenarios
-BuildRequires : testtools
-BuildRequires : testtools-python
-BuildRequires : tox
-BuildRequires : traceback2-python
-BuildRequires : trollius-python
-BuildRequires : unittest2-python
-BuildRequires : virtualenv
 
 %description
 ===============================================
@@ -100,12 +41,12 @@ python components for the ceilometermiddleware package.
 
 %build
 export LANG=C
-export SOURCE_DATE_EPOCH=1489026734
+export SOURCE_DATE_EPOCH=1489272651
 python2 setup.py build -b py2
 python3 setup.py build -b py3
 
 %install
-export SOURCE_DATE_EPOCH=1489026734
+export SOURCE_DATE_EPOCH=1489272651
 rm -rf %{buildroot}
 python2 -tt setup.py build -b py2 install --root=%{buildroot} --force
 python3 -tt setup.py build -b py3 install --root=%{buildroot} --force
