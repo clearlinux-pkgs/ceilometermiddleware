@@ -4,7 +4,7 @@
 #
 Name     : ceilometermiddleware
 Version  : 0.5.0
-Release  : 16
+Release  : 17
 URL      : http://tarballs.openstack.org/ceilometermiddleware/ceilometermiddleware-0.5.0.tar.gz
 Source0  : http://tarballs.openstack.org/ceilometermiddleware/ceilometermiddleware-0.5.0.tar.gz
 Summary  : OpenStack Telemetry middleware for generating metrics
